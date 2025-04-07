@@ -30,9 +30,7 @@ export default function App() {
 }
 
 interface HouseProps {
-  position?: [number, number, number];
-  rotation?: [number, number, number];
-  scale?: number | [number, number, number];
+  [key: string]: any;
 }
 
 function House(props: HouseProps) {
@@ -101,7 +99,6 @@ interface CSGProps {
   rotation?: [number, number, number];
   scale?: number | [number, number, number];
   children?: ReactNode;
-  name?: string;
 }
 
 const Door = (props: CSGProps) => (
